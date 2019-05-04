@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 import main.java.com.michalhynek.fibonacci.calculator.FibonacciCalculator;
-import org.apache.commons.lang3.StringUtils;
+import main.java.com.michalhynek.fibonacci.util.NumberUtil;
 
 public class Main {
 
@@ -15,7 +15,7 @@ public class Main {
         System.out.print("Enter n: ");
         String userInput = userInputReader.readLine();
 
-        if (StringUtils.isNumeric(userInput)) {
+        if (NumberUtil.isInteger(userInput)) {
             int n = Integer.parseInt(userInput);
 
             for (int i = 0; i < n; i++) {
