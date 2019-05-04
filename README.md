@@ -12,6 +12,8 @@
 
 The script compiles the application into an executable jar and runs the jar.
 
+## Run jar file
+If everything else fails, you can run the compiled jar file in the bin directory - `java -jar ./fibonacci.jar`.  This is a fallback option and I wouldn't normally add a compiled binary to Git.
 
 # Sample Output
 
