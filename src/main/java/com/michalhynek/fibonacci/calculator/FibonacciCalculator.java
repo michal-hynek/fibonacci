@@ -9,7 +9,20 @@ import java.math.BigInteger;
  */
 public class FibonacciCalculator {
 
+    public static final int UPPER_LIMIT = 9999;
+
     public static BigInteger calculate(int n) {
+        validateN(n);
+        return calculateFib(n);
+    }
+
+    private static void validateN(int n) {
+        if (n < 0 || n > UPPER_LIMIT) {
+            throw new IllegalArgumentException(n + " is invalid.  Only non-negative integers less than 10,000 are valid.");
+        }
+    }
+
+    private static BigInteger calculateFib(int n) {
         if (n == 0) {
             return BigInteger.ZERO;
         } else if (n == 1) {

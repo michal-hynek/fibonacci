@@ -38,4 +38,14 @@ public class FibonacciCalculatorTest {
             FibonacciCalculator.calculate(300)
         );
     }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void testCalculate_negativeNumber_shouldThrow() {
+        FibonacciCalculator.calculate(-1);
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void testCalculate_numberGreaterThanUpperLimit_shouldThrow() {
+        FibonacciCalculator.calculate(FibonacciCalculator.UPPER_LIMIT + 1);
+    }
 }

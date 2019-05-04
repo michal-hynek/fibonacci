@@ -18,7 +18,7 @@ public class Main {
         printHeader();
         String userInput = getUserInput();
 
-        if (NumberUtil.isInteger(userInput)) {
+        if (isValidInput(userInput)) {
             int n = Integer.parseInt(userInput);
 
             for (int i = 0; i < n; i++) {
@@ -40,5 +40,14 @@ public class Main {
 
         System.out.print("Enter how many Fibonacci numbers you want to print out: ");
         return userInputReader.readLine();
+    }
+
+    private static boolean isValidInput(String userInput) {
+        if (!NumberUtil.isInteger(userInput)) {
+            return false;
+        }
+
+        int parsedInteger = Integer.parseInt(userInput);
+        return parsedInteger >= 0 && parsedInteger <= FibonacciCalculator.UPPER_LIMIT;
     }
 }
