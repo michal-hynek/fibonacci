@@ -20,7 +20,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>main.java.com.michalhynek.Main</mainClass>
+                            <mainClass>main.java.com.michalhynek.fibonacci.Main</mainClass>
                         </manifest>
                     </archive>
                     <descriptorRefs>

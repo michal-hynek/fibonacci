@@ -1,8 +1,8 @@
-package test.java.com.michalhynek.fibonacci;
+package test.java.com.michalhynek.fibonacci.calculator;
 
 import static org.junit.Assert.assertEquals;
 
-import main.java.com.michalhynek.fibonacci.FibonacciCalculator;
+import main.java.com.michalhynek.fibonacci.calculator.FibonacciCalculator;
 
 import org.junit.Test;
 

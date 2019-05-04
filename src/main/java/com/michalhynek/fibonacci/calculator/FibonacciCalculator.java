@@ -1,4 +1,4 @@
-package main.java.com.michalhynek.fibonacci;
+package main.java.com.michalhynek.fibonacci.calculator;
 
 import java.math.BigInteger;
 

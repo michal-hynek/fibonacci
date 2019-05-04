@@ -1,10 +1,10 @@
-package main.java.com.michalhynek;
+package main.java.com.michalhynek.fibonacci;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-import main.java.com.michalhynek.fibonacci.FibonacciCalculator;
+import main.java.com.michalhynek.fibonacci.calculator.FibonacciCalculator;
 import org.apache.commons.lang3.StringUtils;
 
 public class Main {
